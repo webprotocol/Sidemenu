@@ -2,26 +2,28 @@ import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { Page1 } from '../pages/page1/page1';
-import { Page2 } from '../pages/page2/page2';
-import { DetailPage } from '../pages/page2/detail/detail';
+
+import { MasterPage } from '../pages/master/master';
+import { DetailPage } from '../pages/master/detail/detail';
+
 import { Page3 } from '../pages/page3/page3';
 
-import { AboutPage } from '../pages/tabs/about/about';
-import { ContactPage } from '../pages/tabs/contact/contact';
-import { HomePage } from '../pages/tabs/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { HomePage } from '../pages/tabs/home/home';
+import { ContactPage } from '../pages/tabs/contact/contact';
+import { AboutPage } from '../pages/tabs/about/about';
 
 @NgModule({
 	declarations: [
 		MyApp,
 		Page1,
-		Page2,
+		MasterPage,
 		DetailPage,
 		Page3,
-        AboutPage,
-		ContactPage,
+		TabsPage,
 		HomePage,
-		TabsPage
+		ContactPage,
+        AboutPage
 	],
 	imports: [
 		IonicModule.forRoot(MyApp)
@@ -30,13 +32,13 @@ import { TabsPage } from '../pages/tabs/tabs';
 	entryComponents: [
 		MyApp,
 		Page1,
-		Page2,
+		MasterPage,
 		DetailPage,
 		Page3,
-        AboutPage,
-		ContactPage,
+		TabsPage,
 		HomePage,
-		TabsPage
+		ContactPage,
+        AboutPage
 	],
 	providers: []
 })

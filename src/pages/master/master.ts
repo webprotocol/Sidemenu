@@ -5,10 +5,10 @@ import { NavController } from 'ionic-angular';
 import { DetailPage } from './detail/detail';
 
 @Component({
-	selector: 'page-page2',
-	templateUrl: 'page2.html'
+	selector: 'page-master',
+	templateUrl: 'master.html'
 })
-export class Page2 {
+export class MasterPage {
 
 	icons: string[];
 	items: Array<{ title: string, note: string, icon: string }>;
