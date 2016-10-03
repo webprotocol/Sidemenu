@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> Nativex > Compass </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2 class="red">Device Orientation</h2>
+  <p>Heading: {{heading}}deg</p>
+  <button [disabled]="flag"  ion-button block (click)="onManual()">Manual</button>
+  <button [disabled]="flag"  ion-button block (click)="onStart()" color="light">Start</button>
+  <button [disabled]="!flag" ion-button block (click)="onStop()"  color="light">Stop</button>
+  <img src="assets/img/compass.png" [style.transform]="rotate"/>
+</ion-content>

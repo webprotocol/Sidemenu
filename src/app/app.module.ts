@@ -8,6 +8,9 @@ import { TabsPage } from '../pages/tabs/tabs'; 	import { HomePage } from '../pag
 												import { AboutPage } from '../pages/tabs/about/about';
 
 import { NativePage } from '../pages/native/native';
+import { NativexPage } from '../pages/nativex/nativex';	import { CompassPage } from '../pages/nativex/compass/compass';
+														import { NContactPage } from '../pages/nativex/contact/contact';
+														import { NAboutPage } from '../pages/nativex/about/about';
 
 @NgModule({
 	declarations: [
@@ -16,7 +19,8 @@ import { NativePage } from '../pages/native/native';
 		MasterPage,	DetailPage,
 		TabsPage, HomePage,	ContactPage, AboutPage,
 
-		NativePage
+		NativePage,
+		NativexPage, CompassPage,	NContactPage, NAboutPage
 	],
 	imports: [
 		IonicModule.forRoot(MyApp)
@@ -29,6 +33,7 @@ import { NativePage } from '../pages/native/native';
 		TabsPage, HomePage,	ContactPage, AboutPage,
 
 		NativePage,
+		NativexPage, CompassPage,	NContactPage, NAboutPage
 	],
 	providers: []
 })

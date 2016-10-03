@@ -7,6 +7,7 @@ import { MasterPage } from '../pages/master/master';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { NativePage } from '../pages/native/native';
+import { NativexPage } from '../pages/nativex/nativex';
 
 
 @Component({
@@ -16,7 +17,7 @@ export class MyApp {
 	@ViewChild(Nav) nav: Nav;
 
 	// rootPage: any = Page1;
-	rootPage: any = NativePage;
+	rootPage: any = NativexPage;
 
 	pages: Array<{ title: string, component: any }>;
 
@@ -25,11 +26,12 @@ export class MyApp {
 
 		// used for an example of ngFor and navigation
 		this.pages = [
-			{ title: 'Single Page',	component: SinglePage },
-			{ title: 'Master Page', component: MasterPage },
-			{ title: 'Tabs Page', 	component: TabsPage },
+			{ title: 'Single Page',		component: SinglePage },
+			{ title: 'Master Page', 	component: MasterPage },
+			{ title: 'Tabs Page', 		component: TabsPage },
 
-			{ title: 'Native Page', component: NativePage }
+			{ title: 'Native Page', 	component: NativePage },
+			{ title: 'Nativex Page', 	component: NativexPage }
 		];
 
 	}
