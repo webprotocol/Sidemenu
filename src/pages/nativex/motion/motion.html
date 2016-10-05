@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> Nativex > Motion</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Device Motion</ion-list-header>
+    <ion-item>
+      <ion-icon name="hammer" item-left></ion-icon>
+      <button ion-button block color="primary" (click)="onManual()">Manual</button>
+    </ion-item>
+	<ion-item>
+      <ion-icon name="bicycle" item-left></ion-icon>
+	  <button ion-button block color="secondary" (click)="onStart()">Start</button>
+    </ion-item>
+	<ion-item>
+      <ion-icon name="hand" item-left></ion-icon>
+	  <button ion-button block color="dark" (click)="onStop()">Stop</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

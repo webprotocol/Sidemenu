@@ -24,6 +24,10 @@ export class NativePage {
 		console.log("onToast()...");
 		native.Toast.showShortBottom("onToast()...").subscribe();
 	}
+	onLight(event) {
+		console.log("onLight()...");
+		native.Flashlight.switchOn();
+	}
 
 
 }
