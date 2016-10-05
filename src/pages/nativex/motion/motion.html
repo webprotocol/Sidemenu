@@ -12,15 +12,27 @@
     <ion-list-header>Device Motion</ion-list-header>
     <ion-item>
       <ion-icon name="hammer" item-left></ion-icon>
-      <button ion-button block color="primary" (click)="onManual()">Manual</button>
+      <button ion-button block color="primary" (click)="onManual()" [disabled]="mflag">Manual</button>
     </ion-item>
 	<ion-item>
       <ion-icon name="bicycle" item-left></ion-icon>
-	  <button ion-button block color="secondary" (click)="onStart()">Start</button>
+	  <button ion-button block color="secondary" (click)="aflag=true; onStart()" [disabled]="aflag">Start</button>
     </ion-item>
 	<ion-item>
       <ion-icon name="hand" item-left></ion-icon>
-	  <button ion-button block color="dark" (click)="onStop()">Stop</button>
+	  <button ion-button block color="dark" (click)="aflag=false; onStop()" [disabled]="!aflag">Stop</button>
+    </ion-item>
+	<ion-item>
+      <ion-icon name="barcode" item-left></ion-icon>
+	  <p>X axis : {{x_axis}} m/s2</p>
+    </ion-item>
+	<ion-item>
+      <ion-icon name="barcode" item-left></ion-icon>
+	  <p>Y axis : {{y_axis}} m/s2</p>
+    </ion-item>
+	<ion-item>
+      <ion-icon name="barcode" item-left></ion-icon>
+	  <p>Z axis : {{z_axis}} m/s2</p>
     </ion-item>
   </ion-list>
 </ion-content>
