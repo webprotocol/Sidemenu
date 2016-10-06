@@ -26,7 +26,7 @@ export class NativePage {
 	}
 	onLight(event) {
 		console.log("onLight()...");
-		native.Flashlight.switchOn();
+		native.Flashlight.toggle();
 	}
 
 

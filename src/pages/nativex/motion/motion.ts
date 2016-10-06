@@ -19,6 +19,9 @@ export class MotionPage {
 	x_axis: number = 0;
 	y_axis: number = 0;
 	z_axis: number = 9.8;
+	pvalue: number = 10;
+
+	sub: any;
 
 	onManual() {
 		this.mflag = true;
@@ -28,15 +31,23 @@ export class MotionPage {
 			this.y_axis = v.y;
 			this.z_axis = v.z;
 			this.mflag = false;
+
 		})
 	}
     onStart() {
-		// this.aflag = true;
+		this.aflag = true;
 		console.log("onStart()...");
+		this.sub = native.DeviceMotion.watchAcceleration({frequency: 100}).subscribe((v:native.AccelerationData) => {
+			console.dir(v);
+			this.x_axis = v.x;
+			this.y_axis = v.y;
+			this.z_axis = v.z;
+		});
 	}
     onStop() {
-		// this.aflag = false;
+		this.aflag = false;
 		console.log("onStop()...");
+		this.sub.unsubscribe();
 	}
 
 }
