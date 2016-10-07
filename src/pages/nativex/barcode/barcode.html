@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> Nativex > Barcode</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<h1>Barcode Reader</h1>
+	<ion-list>
+		<ion-list-header>Compand</ion-list-header>
+		<ion-item>
+			<ion-icon name="bicycle" item-left></ion-icon>
+			<button ion-button block (click)="onScan()">Scan</button>
+
+		</ion-item>
+		<ion-item>
+			<ion-icon name="bicycle" item-left></ion-icon>
+			<button ion-button block (click)="onMap()">Map</button>
+
+		</ion-item>
+
+	</ion-list>
+	<div id="map" #map style="backgournd-color:red; width:100%; height:500px;">
+		xxxxxxxxxxxxxxx
+	</div>
+
+</ion-content>

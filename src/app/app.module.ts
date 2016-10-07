@@ -24,7 +24,7 @@ import { NativePage } from '../pages/native/native';
  */
 import { NativexPage } from '../pages/nativex/nativex';	import { CompassPage } from '../pages/nativex/compass/compass';
 														import { MotionPage } from '../pages/nativex/motion/motion';
-														import { NAboutPage } from '../pages/nativex/about/about';
+														import { BarcodePage } from '../pages/nativex/barcode/barcode';
 
 @NgModule({
 	declarations: [
@@ -34,7 +34,7 @@ import { NativexPage } from '../pages/nativex/nativex';	import { CompassPage } f
 		TabsPage, HomePage,	ContactPage, AboutPage,
 
 		NativePage,
-		NativexPage, CompassPage,	MotionPage, NAboutPage
+		NativexPage, CompassPage,	MotionPage, BarcodePage
 	],
 	imports: [
 		IonicModule.forRoot(MyApp)
@@ -47,7 +47,7 @@ import { NativexPage } from '../pages/nativex/nativex';	import { CompassPage } f
 		TabsPage, HomePage,	ContactPage, AboutPage,
 
 		NativePage,
-		NativexPage, CompassPage,	MotionPage, NAboutPage
+		NativexPage, CompassPage,	MotionPage, BarcodePage
 	],
 	providers: []
 })
